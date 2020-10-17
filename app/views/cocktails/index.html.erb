@@ -1,15 +1,25 @@
 
-<h1>Fancy Cocktails</h1>
-
-<div>
-<h2><%= link_to 'Add Cocktail', new_cocktail_path(@cocktail) %></h2>
+<div class="content">
+  <div class="content__container">
+    <p class="content__container__text">
+      
+    </p>
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item"> Mai Tai !</li>
+      <li class="content__container__list__item">Pina Colada !</li>
+      <li class="content__container__list__item">Mojito !</li>
+      <li class="content__container__list__item">Margarita !</li>
+    </ul>
+  </div>
 </div>
 
+<div class="container">
 <div class = "grid-container">
 <%@cocktails.each do |cocktail|%>
 
 <div class="card" style="width: 18rem;">
-  <div class="grid-item"><img class="card-img-top" src="https://images.unsplash.com/photo-1536599424071-0b215a388ba7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap"></div>
+  <div class="grid-item"><img class="card-img-top" src="<%= cl_image_path cocktail.photo.key if cocktail.photo.attached? %>" alt="Card image cap"></div>
   <div class="card-body"> 
     <h5 class="card-title"><%= cocktail.name%></h5>
        <p> <%= link_to 'More info', cocktail %></p>
@@ -32,8 +42,8 @@
   <tbody>
     <% @cocktails.each do |cocktail| %>
       <%# <tr>
-        <td><%= cocktail.name %></td>
-        <%# <td><%= link_to 'Show', cocktail %></td>     
+        <td><%= cocktail.name %>
+        <%# <td><%= link_to 'Show', cocktail %>    
       <%# </tr>
     <% end %>
   <%# </tbody>

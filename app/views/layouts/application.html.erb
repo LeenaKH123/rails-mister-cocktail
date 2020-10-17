@@ -10,9 +10,75 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <%# <nav class="navbar navbar-light bg-light"> %>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    
+
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="navbar-brand">
+        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" width="30" height="30" class="d-inline-block align-top" alt="">
+       <%= link_to 'Home', cocktails_path %>
+      </a>
+     <%= link_to 'Add another cocktail', new_cocktail_path(@cocktail) %>
+  </button>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn" type="submit">Search</button>
+        
+      </form>
+    </nav>  
   </head>
 
   <body>
-    <%= yield %>
-  </body>
+     <%= yield %>
+     <!-- Footer -->
+<footer class="page-footer white font-small fixed-bottom">
+
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Social buttons -->
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1">
+          <i class="fab fa-twitter"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gplus mx-1">
+          <i class="fab fa-google-plus-g"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-li mx-1">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-dribbble mx-1">
+          <i class="fab fa-dribbble"> </i>
+        </a>
+      </li>
+    </ul>
+    <!-- Social buttons -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://www.lewagon.com/"> Le Wagon Cocktails</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+  </body> 
+
 </html>

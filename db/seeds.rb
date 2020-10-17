@@ -1,6 +1,23 @@
 require 'open-uri'
 require 'json'
 
+puts "cleaning the database"
+Cocktail.destroy_all
+Ingredient.destroy_all
+
+# puts "started creating cocktails"
+# coc1 = Cocktail.new(name: "Pina Colada", photo: "https://images.unsplash.com/photo-1560179304-6fc1d8749b23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60")
+# coc1.save!
+# coc2 = Cocktail.new()
+# coc2.save!
+# coc3 = Cocktail.new()
+# coc3.save!
+# coc4 = Cocktail.new()
+# coc4.save!
+# puts "4 cocktails were created"
+
+
+
 puts "reading JSON list"
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 drinklist = open(url).read
