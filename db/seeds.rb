@@ -15,9 +15,6 @@ Ingredient.destroy_all
 # coc4 = Cocktail.new()
 # coc4.save!
 # puts "4 cocktails were created"
-
-
-
 puts "reading JSON list"
 url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 drinklist = open(url).read

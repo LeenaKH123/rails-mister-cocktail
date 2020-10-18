@@ -28,6 +28,9 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
 }
+.container {
+  top: 50%;
+}
 
 .card {
 top: 40%
@@ -58,6 +61,12 @@ body {
   width: 30%;
 }
 
+.btn {
+  color: black;
+  background-color: white;
+  border: blanchedalmond;
+
+}
 // .form-group {
 //   position: center;
 // }
