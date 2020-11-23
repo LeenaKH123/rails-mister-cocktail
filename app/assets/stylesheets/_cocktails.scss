@@ -23,10 +23,14 @@
 //   justify-content: space-around;
 
 // }
+.cocktail {
+  margin-top: 20px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
+  margin-top: 20px;
 }
 .container {
   top: 50%;
@@ -54,8 +58,10 @@ body {
 }
 .list-group {
   color: #34495e;
-  margin-left: 10%;
-  width: 36%
+  margin-left: 90px;
+  width: 36%;
+  margin-bottom: 10px;
+  vertical-align: top;
 }
 #cocktail_name {
   width: 30%;
@@ -72,8 +78,8 @@ body {
 // }
 
 .content {
-  position: absolute;
-  top: 25%;
+  position: absolute;  
+  top: 31%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 160px;
